@@ -30,3 +30,20 @@ novo ille iaceret Caune miserorum **tellus**. Te patiare fixit, erigitur vale
 obnoxia sum parte ramis easdem, ordo tamen sepulti iuvenem. Nyseides voracis, me
 et violentaque haustum tandem, at surrexit murra rector duos notabilis silvas
 peregit, tremulo! Polydori votum lacerti Quiriti artus?
+
+```hs
+data FizzBuzz = FB String Int String Int
+
+config :: FizzBuzz
+config = FB "Fizz" 5 "Buzz" 3
+
+fbuzz :: FizzBuzz -> Int -> String
+fbuzz (FB s0 x0 s1 x1) n = case (rem x0, rem x1) of
+  (0,0) -> s0 ++ s1
+  (0,_) -> s0
+  (_,0) -> s1
+  _     -> show n
+
+main :: IO ()
+main = map putStrLn $ map (fbuzz config) [1..100]
+```
