@@ -50,5 +50,5 @@ fbuzz (FB s0 x0 s1 x1) n = case (rem x0, rem x1) of
   _     -> show n
 
 main :: IO ()
-main = map putStrLn $ map (fbuzz config) [1..100]
+main = mapM_ putStrLn $ map (fbuzz config) [1..100]
 ```
