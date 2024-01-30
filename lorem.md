@@ -1,3 +1,7 @@
+layout: page
+title: "lorem"
+permalink: /example
+
 ## Pluviaque in nisi metuunt
 
 Institerant removit inquit saevae
