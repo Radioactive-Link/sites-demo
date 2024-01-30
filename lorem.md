@@ -1,8 +1,3 @@
----
-title: Lorem Ipsum
-layout: default
----
-
 ## Pluviaque in nisi metuunt
 
 Institerant removit inquit saevae
@@ -52,3 +47,6 @@ fbuzz (FB s0 x0 s1 x1) n = case (rem x0, rem x1) of
 main :: IO ()
 main = mapM_ putStrLn $ map (fbuzz config) [1..100]
 ```
+| Table | something |
+| ----- | --------- |
+| still a table | yeah |
