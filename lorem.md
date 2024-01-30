@@ -1,3 +1,8 @@
+---
+title: Lorem Ipsum
+layout: default
+---
+
 ## Pluviaque in nisi metuunt
 
 Institerant removit inquit saevae
